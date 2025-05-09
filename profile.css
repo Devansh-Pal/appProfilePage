@@ -1,0 +1,53 @@
+body{
+    background-color: DarkSlateGrey;
+    font-family: "arial","sans-serif";
+}
+h2,p,#profile{
+    text-align: center;
+    color:#FFFFFF;
+    list-style: none;
+}
+#profile li{
+    display: inline;
+    margin: 15px;
+}
+#streak{
+    list-style: none;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding-top: 10px;
+    width: fit-content;
+    margin: auto; /* Centers the div */
+    text-align: center; /* Ensures content is centered */
+}
+#streak li{
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
+.active-day{
+    color:#00cc00;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse{
+    0%{
+        font-size: 100%;
+    }
+    50%{
+        font-size: 120%;
+        color:#00cc00
+    }
+    100%{
+        font-size: 100%;
+    }
+}
+.inactive-day{
+    color:#cccccc;
+}
+#streak p{
+    color: #676767;
+    display: inline;
+    margin: 10px;
+}
